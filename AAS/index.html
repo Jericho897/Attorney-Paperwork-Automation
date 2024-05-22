@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attorney Paperwork Automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Attorney Paperwork Automation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="form-section">
+            <h2>Fill Out Your Details</h2>
+            <form id="paperwork-form">
+                <div class="form-group">
+                    <label for="client-name">Client Name:</label>
+                    <input type="text" id="client-name" name="client-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="case-number">Case Number:</label>
+                    <input type="text" id="case-number" name="case-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="document-type">Document Type:</label>
+                    <select id="document-type" name="document-type" required>
+                        <option value="">Select Document Type</option>
+                        <option value="contract">Contract</option>
+                        <option value="affidavit">Affidavit</option>
+                        <option value="pleading">Pleading</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additional-info">Additional Information:</label>
+                    <textarea id="additional-info" name="additional-info"></textarea>
+                </div>
+                <button type="submit">Generate Document</button>
+            </form>
+        </section>
+        <section id="preview-section">
+            <h2>Document Preview</h2>
+            <div id="document-preview">
+                <!-- Document preview will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Attorney Paperwork Automation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
